@@ -1,0 +1,84 @@
+/* Styling for the USP box */
+.usp-box {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 550px;
+    background-color: #f9f9f9; /* Light grey background for contrast */
+    border: 3px solid #1e73be; /* Primary site colour */
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Prominent shadow for depth */
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the title */
+.usp-title {
+    padding-top: 0px;
+    margin-top: 0px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #1e73be; /* Primary site colour */
+    margin-bottom: 25px;
+}
+
+/* Grid layout for rows */
+.usp-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.usp-row:hover {
+    background-color: #e6f7ff; /* Light blue hover effect */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Icon box styling */
+.usp-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #1e73be; /* Default icon colour */
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff; /* White background for contrast */
+    border: 2px solid #1e73be; /* Match primary site colour */
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 15px;
+}
+
+/* Change icon colour on hover */
+.usp-row:hover .usp-icon-box {
+    color: #ff6600; /* Secondary site colour */
+    border-color: #ff6600; /* Match hover colour */
+}
+
+/* Text box styling */
+.usp-text-box {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333333;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .usp-box {
+        padding: 20px;
+    }
+
+    .usp-title {
+        font-size: 24px;
+    }
+
+    .usp-text-box {
+        font-size: 16px;
+    }
+}
